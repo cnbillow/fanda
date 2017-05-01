@@ -1,0 +1,88 @@
+// 主体
+main {
+    background: #ebebeb;
+    margin-bottom: 60px;
+    .banner {
+        height: 150px;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+            }
+        }  
+    }
+    .content {
+        li {
+            margin-top: 10px;
+            padding: 12px;;
+            background: #fff;
+            .title {
+                color: #333;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            .answerer {
+                line-height: 30px;
+                font-size: 12px;
+            }
+            .audio-box {
+                position: relative;
+                .pic {
+                    float: left;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    img {
+                        display: block;
+                        width: 100%;
+                        background: red;
+                    }
+                }
+                .audio-btn {
+                    float:left;
+                    position: relative;
+                    width: 120px;
+                    line-height: 28px;
+                    margin-top: 16px;
+                    margin-left: 10px;
+                    padding-left: 15px;
+                    border-radius: 14px;
+                    color: #fff;
+                    background: #44B181;
+                    b {
+                        position: absolute;
+                        top: 0px;
+                        left: -2px;
+                        width: 12px;
+                        height: 12px;
+                        background: url(../images/icon24.png) no-repeat center/cover; 
+                    }
+                    i {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        background: url(../images/img2.png) no-repeat center/cover;
+                    }
+                }
+                .person-num {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    font-size: 12px;
+                    color: #bbb;
+                    b {
+                        display: inline-block;  
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 3px;
+                        vertical-align: baseline;
+                        background: url(../images/mylisten.png) no-repeat center/cover;
+                    }
+                }
+            }
+        }
+    }
+}
+

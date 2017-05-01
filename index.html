@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/index.less">
+    <link rel="stylesheet/less" href="./css/common.less">
+    <link rel="stylesheet" href="./lib/swipe/swiper-3.4.2.min.css">
+    <script src="./js/less.js"></script>
+    <style>
+    </style>
+</head>
+<body ng-app="app">
+    <!--头部tap栏-->
+    <header>
+        <a href="index.html" class="clicked">问题榜</a>        
+        <a href="new.html">新晋榜</a>
+        <a href="abilityList.html">才华榜</a>
+        <a href="search.html" class="search"><span></span></a>
+    </header>
+
+    <!--主体-->
+    <main>
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/banner_1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner_1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner_1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="content">
+            <!--<li class="clearfix">
+                <p class="title">如何学习文言文如何学习文言文如何学习文言文如何学习文言文</p>
+                <p class="answerer"><span>123123</span> | <span>兽语老师</span></p>
+                <div class="audio-box clearfix">
+                    <div class="pic">
+                        <img src="./images/tx.jpg">
+                    </div>
+                    <div class="audio-btn"><b></b><i></i>限时免费听</div>
+                    <span class="person-num"><b></b>20人听过</span>
+                </div>
+            </li>-->
+        </ul>
+    </main>
+
+    <!--底部功能栏-->
+    <footer>
+        <div class="clicked">
+            <a href="index.html">
+                <img src="./images/icon2hover.png" alt="">
+                <p>榜单</p>
+            </a>
+        </div>
+        <div>
+            <a href="listen.html">
+                <img src="./images/icon3.png" alt="">
+                <p>收听</p>
+            </a>
+        </div>
+        <div>
+            <a href="find.html">
+                <img src="./images/icon4.png" alt="">
+                <p>发现</p>
+            </a>
+        </div>
+        <div>
+            <a href="my.html">
+                <img src="./images/icon5.png" alt="">
+                <p>我的</p>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="./lib/swipe/swiper-3.4.2.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+<!--<script src="./node_modules/angular/angular.min.js"></script>-->
+<script>
+    // 轮播图
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+     })  
+</script>
+</html>

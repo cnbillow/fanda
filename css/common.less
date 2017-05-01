@@ -1,0 +1,78 @@
+// 头部tap栏
+header {
+    position: relative;
+    height: 44px;
+    padding: 0 5px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+        &>a {
+            position: relative;
+            float: left;
+            line-height: 14px;
+            width: 33.3333%;
+            text-align: center;
+            font-size: 14px;
+            padding: 14px 0;
+            color: #354248;
+            &+a::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 15px;
+                left: 0;
+                height: 14px;
+                width: 1px;
+                background: #eee;
+            }
+            &.clicked {
+                border-bottom: 2px solid #44B181;
+                color: #44B181;
+            }
+    }
+    .search {
+        position: absolute;
+        top: -2px;
+        right: 0;
+        width: 25px;
+        height: 100%;
+        padding-right: 5px;
+        span {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url(../images/icon1.png) no-repeat center/cover;
+        }
+        &:after {
+            display: none;
+        }
+    }
+}
+
+// 底部功能栏
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px 0 4px;
+    background: #f5f7f9;
+    font-size: 12px;
+    &>div {
+        float: left;
+        width: 25%;
+        text-align: center;
+        a {
+            color: #999;
+            display: block;
+        }
+        img {
+            width: 30%;
+        }
+        &.clicked a {
+            color: #44B181;
+        }
+    }
+}
+.ng-cloak {
+    display: none;
+}

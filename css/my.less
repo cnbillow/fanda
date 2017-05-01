@@ -1,0 +1,88 @@
+body {
+    background: #eee;
+}
+main {
+    margin-bottom: 60px;
+    .info-box {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        font-size: 12px;
+        background: #44b181;
+        color: #fff;
+        .pic {
+            margin-top: 60px;
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 50px;
+            height: 50px;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p {
+            margin-bottom: 3px;
+            b {
+                display: inline-block;
+                width: 15px;
+                height: 13px;
+                margin: 0 5px;
+                background: url('../images/icon11.png') no-repeat center/cover;
+            }
+        }
+        p:last-of-type{
+            margin-bottom: 10px;
+        }
+        .edit, .erweima {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background: red;
+            transform: translateY(-50%);
+        }
+        .edit {
+            left: auto;
+            right: 10px;
+            background: url('../images/icon9.png') no-repeat center/cover;
+        }
+        .erweima {
+            background: url('../images/icon10.png') no-repeat center/cover;
+        }
+    }
+    .btn-bar {
+        margin-top: 10px;
+        line-height: 40px;
+        background: #fff;
+        a {
+            display: block;
+            position: relative;
+            padding: 0 10px;
+            border-bottom: 1px solid #eee;
+            b {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                margin-right: 10px;
+                vertical-align: middle;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            i {
+                position: absolute;
+                right: 10px;
+                top: 14px;
+                width: 12px;
+                height: 12px;
+                background: url('../images/icon-back.png') no-repeat center/cover;
+            }
+        }
+    }
+}

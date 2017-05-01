@@ -1,0 +1,169 @@
+body {
+    background: #e5e7e8;
+}
+header {
+    padding: 0 40px;
+    &>a {
+        width: 50%;
+        &.clicked:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            height: 2px;
+            width: 80px;
+            transform: translateX(50%);
+            background: #44b181;
+        }
+        &.clicked {
+            border: none;
+            color: #44b181;
+        }
+    }
+}
+// 主体
+main {
+    background: #ebebeb;
+    margin-bottom: 60px;
+    .content {
+        li {
+            margin-bottom: 10px;
+            padding: 12px;;
+            background: #fff;
+            a {
+                display: block;
+            }
+            .title {
+                color: #333;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            .answerer {
+                line-height: 30px;
+                font-size: 12px;
+            }
+            .audio-box {
+                position: relative;
+                .pic {
+                    float: left;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    img {
+                        display: block;
+                        width: 100%;
+                        background: red;
+                    }
+                }
+                .audio-btn {
+                    float:left;
+                    position: relative;
+                    width: 120px;
+                    line-height: 28px;
+                    margin-top: 16px;
+                    margin-left: 10px;
+                    padding-left: 15px;
+                    border-radius: 14px;
+                    color: #fff;
+                    background: #44B181;
+                    b {
+                        position: absolute;
+                        top: 0px;
+                        left: -2px;
+                        width: 12px;
+                        height: 12px;
+                        background: url(../images/icon24.png) no-repeat center/cover; 
+                    }
+                    i {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        background: url(../images/img2.png) no-repeat center/cover;
+                    }
+                }
+                .person-num {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    font-size: 12px;
+                    color: #bbb;
+                    b {
+                        display: inline-block;  
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 3px;
+                        vertical-align: baseline;
+                        background: url(../images/mylisten.png) no-repeat center/cover;
+                    }
+                }
+            }
+            .pic {
+                float: left;
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+                overflow: hidden;
+                border-radius: 50%;
+                img {
+                    width: 100%;
+
+                }
+            }
+            .text {
+                overflow: hidden; 
+                position: relative;
+                padding-right: 80px;
+                .name {
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #333;
+                }
+                .post {
+                    font-size: 12px;
+                    color: #999;
+                    text-overflow: ;
+                }
+                .other {
+                    b {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 4px;
+
+                    }
+                    .reply {
+                        b {
+                            background: url(../images/icon8.png) no-repeat center/cover;
+                        }
+                    }
+                    .listen {
+                        b {
+                            background: url(../images/icon7.png) no-repeat center/cover;
+                        }
+                    }
+                }
+                .like {
+                    position: absolute;
+                    top: 14px;
+                    right: 5px;
+                    padding: 2px 8px;
+                    background: #fff;
+                    border: 1px solid #44b181;
+                    border-radius: 5px; 
+                    b {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 5px;
+                        background: url(../images/icon6.png) no-repeat center/cover;
+                    }
+                }
+                .liked {
+                    color: #44B181;
+                }
+            }
+        }
+    }
+}
