@@ -23,7 +23,7 @@ $(function(){
                         <div class="audio-box clearfix">
                             <div class="pic">
                                 <object>
-                                    <a href="#">
+                                    <a href="personPage.html">
                                         <img src="${v.headimgurl}">
                                     </a>
                                 </object>

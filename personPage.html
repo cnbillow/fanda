@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/personPage.less">
     <link rel="stylesheet/less" href="./css/common.less">
-    <link rel="stylesheet/less" href="./css/search.less">
     <script src="./js/less.js"></script>
-    <style>
-    </style>
 </head>
-<body>
 
+<body ng-app="app">
     <!--主体-->
     <main>
-        <div class="search-bar">
+        <div class="info-box">
+            <div class="info">
+            </div>
+        </div>
+
+        <div class="question-box">
             <from>
-                <input type="text" class="text" placeholder="搜索你感兴趣的人和事吧">
-                <input type="submit" class="search-btn" value="搜索">
+                <p class="tip">超过48小时未回答，将全额退款 <span class="price fr">￥20</span></p>
+                <div class="text-area">
+                    <textarea placeholder="向Ta提问"></textarea>
+                    <span>0/60</span>
+                </div>
+                <p class="title"><i></i><span>答案被公开，答案每被偷偷听一次， 你从中分成0.5</span></p>
+                <div class="sub">
+                    <input type="submit" value="提问">
+                </div>
             </from>
         </div>
-        <p class="title-bar">答主</p>
-        <ul class="answer">
-           <!--<li class="clearfix">
-               <div class="pic">
-                   <img src="" alt="">
-               </div>
-               <div class="text">
+        <div class="title-bar">回答了1个问题， 总收入0元 <p><span>最新</span> | <span class="checked">默认</span><p/></div>
+        <ul class="content">
+            <!--<li class="clearfix">
+                <div class="pic">
+                    <img src="" alt="">
+                </div>
+                <div class="text">
                     <p class="name"><span>啧啧啧</span> | <span>汪汪汪</span></p>
                     <p class="other"><span>0个回答</span><span>4人收听</span></p>
-               </div>
-           </li>-->
+                </div>
+            </li>-->
         </ul>
-        <a class="more" href="./moreAnswer.html">查看更多答主</a>
-        <p class="title-bar">问题</p>
-        <ul class="question">
-            <li>
-
-            </li>
-        </ul>
-        <a class="more" href="./moreQuestion.html">查看更多问题</a>
     </main>
 
     <!--底部功能栏-->
@@ -73,7 +76,9 @@
     </footer>
 </body>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-<script src="./js/search.js"></script>
+<script src="./js/personPage.js"></script>
 <script>
+
 </script>
+
 </html>

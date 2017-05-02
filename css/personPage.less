@@ -1,0 +1,148 @@
+body {
+    background: #eee;
+}
+main {
+    margin-bottom: 60px;
+    .info-box {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        font-size: 12px;
+        background: #44b181;
+        color: #fff;
+        .pic {
+            margin-top: 60px;
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 60px;
+            height: 60px;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p {
+            margin-bottom: 3px;
+            b {
+                display: inline-block;
+                width: 15px;
+                height: 13px;
+                margin: 0 5px;
+                background: url('../images/icon11.png') no-repeat center/cover;
+            }
+        }
+        p:last-of-type{
+            margin-bottom: 10px;
+        }
+    }
+    .question-box {
+        background: #fff;
+        padding: 10px;
+        .tip {
+            font-size: 12px;
+            line-height: 20px;
+            color: #999;
+            .price {
+                color: red;
+            }
+        }
+        .text-area {
+            position: relative;
+            width: 100%;
+            textarea {
+                display: block;
+                width: 100%;
+                height: 100px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #bbb;
+                box-sizing: border-box;
+            }
+            span {
+                position: absolute;
+                right: 10px;
+                bottom: 5px;
+            }
+        }
+        .title {
+            line-height: 20px;
+            font-size: 12px;
+            span {
+                vertical-align: middle;
+            }
+            i {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                margin-top: 3px;
+                margin-right: 5px;
+                background: url('../images/radioclick.png') no-repeat center/cover;
+                vertical-align: top;
+            }
+
+        }
+        .sub  {
+            text-align: center;
+            input {
+                margin-top: 5px;
+                padding: 4px 15px;
+                background: #44b181;
+                border-radius: 3px;
+                color: #fff;
+            }
+        }
+    }
+    div.title-bar {
+        padding: 0 10px;
+        line-height: 28px;
+        color: #999;
+        background: #eee;
+        p {
+            float: right;
+        }
+        span.checked {
+            color: #44b181;
+        }
+    }
+    .content {
+        li {
+            position: relative;
+            padding: 10px 10px 10px 70px;
+            min-height: 70px;
+            border-bottom: 1px solid #eee;
+            background: #fff;
+            .pic {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .text {
+                .name {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                    color: #999;
+                    span:first-child {
+                        color: #35424b;
+                    }
+                }
+                .other {
+                    color: #969696;
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
