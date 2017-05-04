@@ -9,7 +9,7 @@ $(function(){
         }
         return "播放试试";
     }
-    $.get("https://ekang.ren/index.php/ask/index/show", {uid:18,page_index:1,page_size:12}, function(data){
+    $.get("http://ekang.ren/index.php/ask/index/show", {uid:18,page_index:1,page_size:12}, function(data){
         var data = data.data.hot_list;
         console.log(data);
         var str = '';
